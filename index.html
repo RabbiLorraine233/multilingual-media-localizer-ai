@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Media Localizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Media Localizer</h1>
+        <p>AI-Powered Content Adaptation</p>
+    </header>
+
+    <main class="app-container">
+        
+        <section class="input-section">
+            <h2>1. Source Content</h2>
+            <textarea id="sourceText" placeholder="Paste your original text here... (e.g., a new product announcement)"></textarea>
+            
+            <div class="controls">
+                <label for="languageSelect">Target Language:</label>
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="th">Thai (ภาษาไทย)</option>
+                    <option value="id">Indonesian (Bahasa Indonesia)</option>
+                </select>
+                <button id="generateBtn" class="primary-btn">Generate</button>
+            </div>
+        </section>
+
+        <section class="output-section">
+            <h2>2. Localized Results</h2>
+            <div id="resultsContainer" class="results-grid">
+                <div class="empty-state">
+                    <p>Your tailored content will appear here.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
