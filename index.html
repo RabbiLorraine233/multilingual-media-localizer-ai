@@ -18,7 +18,12 @@
         <section class="input-section">
             <h2>1. Source Content</h2>
             <textarea id="sourceText" placeholder="Paste your original text here... (e.g., a new product announcement)"></textarea>
-            git push
+            
+            <div class="api-config" style="margin-top: 15px; margin-bottom: 15px;">
+                <input type="password" id="apiKeyInput" placeholder="Enter your AI API Key here (Secure & Local)" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #d2d2d7;">
+                <p style="font-size: 12px; color: #86868b; margin-top: 5px;">Your key is never stored on any server.</p>
+            </div>
+            
             <div class="controls">
                 <label for="languageSelect">Target Language:</label>
                 <select id="languageSelect">
