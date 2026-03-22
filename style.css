@@ -150,3 +150,32 @@ select {
     letter-spacing: 0.5px;
     margin-bottom: 8px;
 }
+/* =========================================
+   7. 移动端适配 (Responsive Design)
+   这部分代码只有在手机/小屏幕上才会生效，绝对不影响电脑端
+   ========================================= */
+@media (max-width: 768px) {
+    
+    /* 把整个网页的两大块，从“左右并排”改成“上下堆叠” */
+    .app-container {
+        flex-direction: column; 
+    }
+
+    /* 缩小网页在手机边缘的留白，给内容腾出更多空间 */
+    body {
+        padding: 20px 15px; 
+    }
+
+    /* 把控制面板里的下拉菜单和按钮也改成上下排列，并拉伸到全宽，方便手指点击 */
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* 按钮变高变宽，防止手机上误触，这叫 a11y (无障碍/友好性) 设计 */
+    .primary-btn {
+        width: 100%;
+        padding: 14px; 
+        font-size: 16px;
+    }
+}
